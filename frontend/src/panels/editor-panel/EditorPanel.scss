@@ -1,0 +1,130 @@
+.editor {
+    grid-row: 1/-1;
+    grid-column: 3 /-1;
+    background-color: #DEDACC;
+    //
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &-header {
+        width: 60%;
+        display: flex;
+        // justify-content: space-around;
+        text-align: center;
+        background-color: #35302D;
+        color: #DEDACC;
+        //width: 60%;
+        padding: 1rem;
+        margin: 3rem;
+        border-radius: 0.4rem;
+        font-size: 1.2rem;
+        font-weight: 700;
+        
+   
+        &--icon{
+            fill:#35302D;
+        }
+
+        &--btn {
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
+        &--attr {
+            flex-basis: 25%;
+            align-items: stretch;
+            transition: all 0.3s;
+            padding: 1rem;
+            font-size: 1rem;
+            font-weight: 700;
+            &:nth-child(2) {
+                margin-left: 2rem;
+            }
+            &:nth-child(3) {
+                margin-left: 1rem;
+            }
+        }
+    }
+    &-list {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        overflow-y: auto;
+        background: linear-gradient(to bottom, rgba($color: #dedacc, $alpha: 0.7), rgba($color: #dedacc, $alpha: 0.7)),
+        url("../../assets/login.jpg");
+        
+
+        &--item {
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            background-color: #546a7b;
+            width: 60%;
+            padding: 1rem;
+            margin: 2rem;
+            border-radius: 0.4rem;
+            transition: all 0.3s;
+            &:hover {
+                transform: scale(1.05);
+                background-color: #72221F;
+            }
+
+            &__attr {
+                flex-basis: 30%;
+                align-items: stretch;
+                transition: all 0.3s;
+                padding: 1rem;
+                font-size: 1rem;
+                font-weight: 700;
+            }
+        }
+    }
+}
+.header {
+    // background-color: rgba(#DEDACC,.5);
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    box-shadow: 0rem .25rem .2rem rgba(black,.5);
+    z-index: 100;
+    &-panel {
+        flex-basis: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    &-btn{
+        background-color: transparent;
+        cursor: pointer;
+        border: none;
+        font-size: 1.2rem;
+        padding: 1rem;
+        &:hover{
+            color: #72221F;
+        }
+    }
+}
+.item-icon {
+    cursor: pointer;
+    border-radius: 1rem;
+    border: none;
+    background: transparent;
+    transition: all 0.2s;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+.editor-icon {
+    fill: #DEDACC;
+}

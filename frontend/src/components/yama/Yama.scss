@@ -1,0 +1,168 @@
+.yama {
+    border-radius: 50%;
+    width: 13rem;
+    height: 13rem;
+    //background: radial-gradient(circle at 100px 100px, currentColor, #000);
+    //box-shadow: rgba(black, 0.498) 0px 30px 30px 1px, rgb(245, 245, 245) 0px 20px 10px 1px;
+
+    &-box {
+        padding: 2rem;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        //align-items: center;
+    }
+    
+    &-eye {
+        border-radius: 50%;
+        width: 3rem;
+        height: 2rem;
+        background: radial-gradient(circle at 20px 20px, #dee3e9, rgb(226, 217, 217));
+        padding: 0.1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: move-angry-head 0.6s;
+        animation-delay: 0.3s;
+        &--big{
+            margin-top: -.5rem;
+            border-radius: 50%;
+            margin-left: 2.5rem;
+            margin-right: 2.5rem;
+        }
+
+        &-angry {
+            animation: move-angry-head 0.6s;
+            animation-delay: 0.3s;
+            &::after {
+                width: 120%;
+                height: 50%;
+                transform: rotate(-35deg);
+                top: -3px;
+                left: -5px;
+                border-radius: 0;
+            }
+            &-normal {
+                animation: wink 0.6s;
+                animation-delay: 0.3s;
+            }
+        }
+        &--core {
+            border-radius: 50%;
+            width: 1rem;
+            height: 1rem;
+            background: radial-gradient(circle at 10px 10px, #4e0c45, rgb(75, 12, 12));
+        }
+    }
+}
+.mouth {
+    width: 6rem;
+    height: 3rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    box-sizing: border-box;
+    bottom: 18%;
+    left: 50%;
+    margin-top: 3rem;
+    background: rgb(85, 18, 29);
+    transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+    animation: move-angry-head 0.6s;
+        animation-delay: 0.3s;
+    &-angry {
+        width: 4rem;
+        height: 2rem;
+        border-top-left-radius: 100%;
+        border-top-right-radius: 100%;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        margin-top: 3rem;
+        background: rgb(85, 18, 29);
+        animation: move-angry-head 0.6s;
+        animation-delay: 0.3s;
+    }
+    &-normal {
+        border-top-left-radius: 100px;
+        border-top-right-radius: 100px;
+        border-bottom-left-radius: 100px;
+        border-bottom-right-radius: 100px;
+        height: 1rem;
+        width: 5rem;
+        background: rgb(85, 18, 29);
+        margin-top: 3rem;
+    }
+}
+
+@keyframes move-angry-head {
+    0% {
+        transform: translateX(0%);
+    }
+
+    20% {
+        transform: translateX(-20%);
+    }
+
+    40% {
+        transform: translateX(15%);
+    }
+
+    60% {
+        transform: translateX(-10%);
+    }
+
+    80% {
+        transform: translateX(5%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+@keyframes wink {
+    0% {
+        height: 20px;
+        margin-top: 0;
+    }
+
+    30% {
+        height: 3px;
+        margin-top: 8px;
+    }
+
+    70% {
+        height: 3px;
+        margin-top: 8px;
+    }
+
+    100% {
+        height: 20px;
+        margin-top: 0;
+    }
+}
+@keyframes blink {
+    0% {
+        height: 20px;
+        margin-top: 0;
+    }
+
+    25% {
+        height: 2px;
+        margin-top: 8px;
+    }
+
+    50% {
+        height: 20px;
+        margin-top: 0;
+    }
+
+    75% {
+        height: 2px;
+        margin-top: 8px;
+    }
+
+    100% {
+        height: 20px;
+        margin-top: 0;
+    }
+}

@@ -1,0 +1,92 @@
+.welcome {
+    grid-row: 1/-1;
+    grid-column: 3 /-1;
+    // background: linear-gradient(to bottom, rgba($color: #DEDACC, $alpha: 0.6), rgba($color: #DEDACC, $alpha: 0.5));
+    //url("../../assets/login2.jpg");
+    background-color: #dedacc;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    &-title {
+        background: linear-gradient(to bottom, rgba($color: #35302d, $alpha: 0.7), rgba($color: #35302d, $alpha: 0.5)),
+            url("../../assets/login.jpg");
+            background-size: cover;
+        // background-color: #72221f;
+        color: #dedacc;
+        width: 100%;
+        text-align: center;
+    }
+    &-box {
+        z-index: 1000;
+        cursor: pointer;
+        margin-top: 10rem;
+        //animation:upside 3s infinite ;
+        transition: all 0.5s;
+        &:hover {
+            transform: scale(1.3);
+        }
+     
+    }
+    &-info {
+        flex-basis: 50%;
+        display: flex;
+        //flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        &--icon{
+            //border: 2px solid green;
+            border-top-left-radius: .4rem;
+            border-top-right-radius: .4rem;
+            border-top: 2px solid purple;
+            border-left: 2px solid purple;
+            border-right: 2px solid purple;
+            width: 88%;
+            background-color: #dedacc;
+            padding: 2rem;
+            fill: #72221F;
+        }
+        &--content{
+            padding: 2rem 2rem;
+        }
+        &--arrow{
+          
+            font-size: 2rem;
+            font-weight: 900;
+        }
+      
+        
+        &--card {
+            border-radius: .6rem;
+            flex-basis: 40%;
+            height: 60%;
+            text-decoration: none;
+            //border: 2px solid green;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            //justify-content: space-between;
+            cursor: pointer;
+            background-color: #35302d;
+            //padding: 2rem;
+            margin: 1rem;
+            color: #dedacc;
+            font-size: 1.2rem;
+            font-weight: 700;
+            box-shadow: 0.5rem 0.5rem 0.3rem rgba($color: #35302d, $alpha: 0.7);
+            transition: all 0.4s;
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+    }
+}
+@keyframes upside {
+    0% {
+        transform: rotateX(0deg);
+    }
+    0% {
+        transform: rotateX(360deg);
+    }
+}

@@ -1,0 +1,97 @@
+.sidebar {
+    background-color: #35302d;
+    height: 100vh;
+    grid-row: 1 / -1;
+    grid-column: 1 / 3;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+   
+
+    &-item {
+        position: relative;
+        padding: 2rem 1rem;
+        font-size: 1rem;
+        width: 88%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        cursor: pointer;
+        &::before {
+            width: 0;
+            height: 100%;
+            content: " ";
+            background-color: red;
+            left: 0;
+            bottom: 0;
+            position: absolute;
+            height: 0;
+            display: block;
+            pointer-events: none;
+            transition: all 0.1s ease-in-out;
+        }
+        &:hover {
+            &::before {
+                height: 100%;
+            }
+        }
+        &:active {
+            &::before {
+                width: 100%;
+                background-color: rgba(red, 0.3);
+            }
+        }
+    }
+    &-link {
+        text-decoration: none;
+        color: #dedacc;
+        margin-left: -3rem;
+    }
+}
+.icon {
+    fill: #dedacc;
+}
+.active {
+    background-color: rgba(red, 0.3);
+    //animation: reload 2s infinite;
+
+}
+
+@keyframes reload {
+    0% {
+        width: 100%;
+    }
+
+    10% {
+        width: 0%;
+    }
+    20% {
+        width: 0%
+    }
+    30% {
+        width: 0%;
+    }
+    40% {
+        width: 0%
+    }
+    50% {
+        width: 0%;
+    }
+    60% {
+        width: 100%;
+    }
+    70% {
+        width: 0%;
+    }
+   80% {
+        width: 0%
+    }
+    90% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+
+}
