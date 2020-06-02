@@ -10,11 +10,11 @@ Spring Boot, React, MongoDB and Docker CRUD Web Application
  #### My brother's version: 
  1. Backend: NodeJS, Express
  2. Database: MongoDB
- 3. Frontend: ReactJS 
+ 3. Frontend: React
  #### My version: 
  1. Backend: Spring Boot, Spring Hateos, Spring Security with Basic Authentication
  2. Database: MongoDB
- 3. Frontend: ReactJS
+ 3. Frontend: React
  4. Docker
  
  #### Results
