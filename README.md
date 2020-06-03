@@ -18,7 +18,7 @@ Spring Boot, React, MongoDB and Docker CRUD Web Application
  4. Docker
  
  #### Results
- My brother won the first round(2:1), because he had better frontend. I haven't conception and enough time.
+ My brother won the first round(2:1), because he had better frontend.I didn’t have a concept and enough time.
  
  ## Next
   #### My brother's planned version: 
