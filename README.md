@@ -7,7 +7,7 @@ Spring Boot, React, MongoDB and Docker CRUD Web Application
  and I  competed to find the best solution. 
  ## First round
  
- #### My brother's version: 
+ #### [My brother's version](https://github.com/kecskener/BushMonster): 
  1. Backend: NodeJS, Express
  2. Database: MongoDB
  3. Frontend: React
